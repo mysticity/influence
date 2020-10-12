@@ -2,9 +2,86 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>influence</title>
+<title>genealogy of influence</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+	
+<style>
+*{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	color: greenyellow;
+	background: black;
+}
+	
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    padding: 8px 30px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    transition: ease .5s;
+	position: relative;
+}
+
+label:hover {
+    font-weight: 500;
+}
+
+label::after {
+	content: '\003E';
+	font-size: 22px;
+	position: absolute;
+	left: 10px;
+	top: 4px;
+}
+
+input:checked + label::after {
+	transform: rotate(90deg);
+}
+
+.content {
+    padding: 10px 25px;
+    margin: 0 0 1px 0;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+</style>
+
 </head>
 
 <body>
+
+<p>Genealogy of Influence</p>
+
+<input type="checkbox" id="title1" />
+<label for="title1">Accordion One</label>
+
+<div class="content">
+<p>Your content goes here.</p>
+</div>
+
+<input type="checkbox" id="title2" />
+<label for="title2">Accordion Two</label>
+
+<div class="content">
+<p>Your content goes here.</p>
+</div>
+
+<input type="checkbox" id="title3" />
+<label for="title3">Accordion Three</label>
+
+<div class="content">
+<p>Your content goes here.</p>
+</div>
+
 </body>
 </html>
