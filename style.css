@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+cursor: url("img/pencil.png") 10 50, default;
+width: 100%;
+height: 100%;
+margin: 0;
+}
+
+body {
+width: 100%;
+height: 100%;
+margin: 0;
+
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size: 16px;
+line-height: 1em;
+}
+
+button, input, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: none;
+}
+
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+	cursor: default !important;
+}
+
+.label1:hover span, .label2:hover span, .label3:hover span {display: none;}
+.label1:hover:before {content:"designer";}
+.label2:hover:before {content:"artist";}
+.label3:hover:before {content:"technophile";}
+
+.tip {display: none; font-weight: 400;}
+
+.text:hover .tip {display:inline-block}
+
+a:link, a:visited {	color: #000; text-decoration: none;}
+a:hover{color:#ffcc33;}
+
+.footer {font-size: 16px;}
+
+#clr{
+	position:absolute;
+	top: 0;
+	right: 0;
+	cursor: default !important;
+	
+	font-family: 'Shadows Into Light', sans-serif;
+    font-size: 20px;
+    letter-spacing: .1em;
+	text-transform: uppercase;
+	
+    display: block;
+	margin: 30px;
+	padding: 10px 20px;
+    border: 1px solid #000;
+  	box-shadow: 0 5px #000;
+	background: white;
+}
+
+#clr:hover, #clr:active {
+	box-shadow: none;
+	transform: translateY(5px);
+}
