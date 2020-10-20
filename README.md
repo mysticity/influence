@@ -1,2 +1,2 @@
-# influence
-directed research_genealogy of influence
+# mysticity.net
+testing ground for personal website
